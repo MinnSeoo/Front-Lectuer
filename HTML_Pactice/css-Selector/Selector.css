@@ -1,0 +1,27 @@
+/* *{
+    color: red;
+    '*'은 전체 선택자, 요소 내부의 모든 요소 선택 
+}
+
+li {
+    font-weight: bold;
+    color: green;
+} 
+*/
+
+/*클래스 선택자*/
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.green {
+    color: green;
+}
+
+/*아이디 선택자*/
+#student {
+    font-weight: bold;
+    color: cadetblue;
+}
