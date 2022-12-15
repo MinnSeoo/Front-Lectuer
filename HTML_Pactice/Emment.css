@@ -1,0 +1,6 @@
+.box {
+    width: 100px;
+    height: 200px;  
+}
+
+/* Emment 문법 -> w:100 == width: 100px (기본 값은 px, but %..등등 표현가능!) */
