@@ -1,0 +1,49 @@
+/*first, last*/
+.colors li:first-child {
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-align: center;
+}
+
+.colors li:last-child {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    text-align: center;
+}
+/*----------------------------------*/
+
+/*NTH child*/
+.fruits li:nth-child(2) {
+    color: green; 
+    /*li태그의 2번째 요소만 css 적용*/
+}
+
+.fruits li:nth-child(3n) {
+    color:red;
+    /*li태그의 2의 배수 요소들만 css 적용*/
+}
+
+.fruits li:nth-child(n+4) {
+    color: yellow;
+    /*li태그의 4번째 요소부터 css 적용*/
+}
+/*-------------------------------------*/
+
+/*NTH Of Type*/
+.animals li:nth-of-type(1) {
+    color:brown;
+}
+
+.animals p:nth-of-type(1) { 
+    color: chocolate;   
+    /*클래스명이 animal이고 p태그 타입중에 첫번째 요소 선택*/
+}
+
+.animals span:nth-of-type(2) {
+    color: gray;
+    /*클래스명이 animals의 후속요소인 span태그 중에서 2번째 요소 선택*/
+}
+
+
