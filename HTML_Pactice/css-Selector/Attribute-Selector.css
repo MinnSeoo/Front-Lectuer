@@ -1,0 +1,9 @@
+[class^= "btn-"] {
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+[class$= "btn-"] {
+    font-weight: bolder;
+    border-radius: 10px;
+}
