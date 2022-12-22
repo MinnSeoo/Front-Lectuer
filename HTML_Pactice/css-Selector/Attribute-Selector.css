@@ -1,9 +1,31 @@
-[class^= "btn-"] {
-    font-weight: bold;
-    border-radius: 6px;
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: tomato;
+}
+.box2 {
+    margin-left: 5cm;
 }
 
-[class$= "btn-"] {
-    font-weight: bolder;
-    border-radius: 10px;
+.box3 {
+    margin-left: 10cm;
+}
+
+.box4{
+    margin-left: 15cm;
+}
+
+[class^= "btn-"] {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 20px;
+    padding: 10px 70px;
+    border-color: white;
+}
+
+[class$= "Success"] {
+    border-color: green;
+    background-color: yellowgreen;
 }
