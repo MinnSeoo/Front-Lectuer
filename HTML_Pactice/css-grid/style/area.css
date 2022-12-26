@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-areas: "header" "header" "header";
+}
+
+.item {
+    border: 10px solid red;
+    font-size: 50px;
+}
+
+.item-nth:nth-child(1) {
+    grid-area: header;
+}
+
+.item-nth:nth-child(2) {
+    grid-area: main;
+}
+
+.item-nth:nth-child(3) {
+    grid-area: aside;
+}
+
+.item-nth:nth-child(4) {
+    grid-area: footer;
+}
+
+
