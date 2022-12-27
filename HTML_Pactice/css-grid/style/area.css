@@ -1,6 +1,12 @@
 .container {
     display: grid;
-    grid-template-areas: "header" "header" "header";
+    width: 600px;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "header header header"
+    "main . aside"  /*'.'은 그 칸을 비워둠*/
+    ". footer footer";    /*이 경우 2,3번째 칸만 영역을 가지게 됨.*/
 }
 
 .item {
@@ -8,19 +14,19 @@
     font-size: 50px;
 }
 
-.item-nth:nth-child(1) {
+.item:nth-child(1) {
     grid-area: header;
 }
 
-.item-nth:nth-child(2) {
+.item:nth-child(2) {
     grid-area: main;
 }
 
-.item-nth:nth-child(3) {
+.item:nth-child(3) {
     grid-area: aside;
 }
 
-.item-nth:nth-child(4) {
+.item:nth-child(4) {
     grid-area: footer;
 }
 
