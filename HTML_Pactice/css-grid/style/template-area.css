@@ -7,12 +7,18 @@
     "header header header"
     "main . aside"  /*'.'은 그 칸을 비워둠*/
     ". footer footer";    /*이 경우 2,3번째 칸만 영역을 가지게 됨.*/
+    /*---------------------------*/
+    gap: 100px 20px;
+    /*gap 속성은 행(row) 열(column)에 간격을 주는 속성으로
+      앞에는 행 뒤에는 열을 가리킨다. 
+      # 따로 주려면 row-gap or column-gap 이런식으로 줄 수도 있음 
+    */
 }
 
 .item {
     border: 10px solid red;
     font-size: 50px;
-}
+}   
 
 .item:nth-child(1) {
     grid-area: header;
